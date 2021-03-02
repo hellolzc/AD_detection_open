@@ -1,0 +1,16 @@
+{
+    "name":"SelectFromCPE16",
+    "project_root":"../../",
+    "output_fp":"data/acoustic_CPE16_selected3.hdf5",
+    "input":[
+        {
+            "name":"ComParE",
+            "prefix":null,
+            "dir":"opensmile/audio_features_CPE16_/",
+            "selected":"F0final_sma,voicingFinalUnclipped_sma,jitterLocal_sma,jitterDDP_sma,shimmerLocal_sma,logHNR_sma,audspec_lengthL1norm_sma,audspecRasta_lengthL1norm_sma,pcm_RMSenergy_sma,pcm_zcr_sma,mfcc_sma[1],mfcc_sma[2],mfcc_sma[3],mfcc_sma[4],mfcc_sma[5]"
+        }
+    ],
+    "?comment":"remove audSpec_Rfilt_sma[0-25],audSpec_Rfilt_sma_de[0-25],F0final_sma_de,voicingFinalUnclipped_sma_de,jitterLocal_sma_de,jitterDDP_sma_de,shimmerLocal_sma_de,logHNR_sma_de,audspec_lengthL1norm_sma_de,audspecRasta_lengthL1norm_sma_de,pcm_RMSenergy_sma_de,pcm_zcr_sma_de,pcm_fftMag_fband250-650_sma_de,pcm_fftMag_fband1000-4000_sma_de,pcm_fftMag_spectralRollOff25.0_sma_de,pcm_fftMag_spectralRollOff50.0_sma_de,pcm_fftMag_spectralRollOff75.0_sma_de,pcm_fftMag_spectralRollOff90.0_sma_de,pcm_fftMag_spectralFlux_sma_de,pcm_fftMag_spectralCentroid_sma_de,pcm_fftMag_spectralEntropy_sma_de,pcm_fftMag_spectralVariance_sma_de,pcm_fftMag_spectralSkewness_sma_de,pcm_fftMag_spectralKurtosis_sma_de,pcm_fftMag_spectralSlope_sma_de,pcm_fftMag_psySharpness_sma_de,pcm_fftMag_spectralHarmonicity_sma_de,mfcc_sma_de[1],mfcc_sma_de[2],mfcc_sma_de[3],mfcc_sma_de[4],mfcc_sma_de[5],mfcc_sma_de[6],mfcc_sma_de[7],mfcc_sma_de[8],mfcc_sma_de[9],mfcc_sma_de[10],mfcc_sma_de[11],mfcc_sma_de[12],mfcc_sma_de[13],mfcc_sma_de[14],pcm_fftMag_fband250-650_sma,pcm_fftMag_fband1000-4000_sma,pcm_fftMag_spectralRollOff25.0_sma,pcm_fftMag_spectralRollOff50.0_sma,pcm_fftMag_spectralRollOff75.0_sma,pcm_fftMag_spectralRollOff90.0_sma,pcm_fftMag_spectralFlux_sma,pcm_fftMag_spectralCentroid_sma,pcm_fftMag_spectralEntropy_sma,pcm_fftMag_spectralVariance_sma,pcm_fftMag_spectralSkewness_sma,pcm_fftMag_spectralKurtosis_sma,pcm_fftMag_spectralSlope_sma,pcm_fftMag_psySharpness_sma,pcm_fftMag_spectralHarmonicity_sma,mfcc_sma[6],mfcc_sma[7],mfcc_sma[8],mfcc_sma[9],mfcc_sma[10],mfcc_sma[11],mfcc_sma[12],mfcc_sma[13],mfcc_sma[14]"
+}
+
+

@@ -1,0 +1,25 @@
+*.py[cod]
+
+*~
+*.swp
+
+*/.ipynb_checkpoints/
+*.ipynb
+
+.vscode/
+
+# files in workspace
+ws_en/
+ws_cn/
+
+test/
+*/log/
+
+
+*.wav
+*.mp3
+*.cha
+*.TextGrid
+*.csv
+*.pkf
+*.pk

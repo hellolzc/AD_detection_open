@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+matplotlib
+librosa
+tqdm
+# tensorflow >= 2.2
