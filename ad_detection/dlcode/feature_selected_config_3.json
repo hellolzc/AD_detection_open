@@ -1,6 +1,6 @@
 {
     "name":"SelectFromCPE16",
-    "project_root":"../../",
+    "project_root":"../../ws_en/",
     "output_fp":"data/acoustic_CPE16_selected3.hdf5",
     "input":[
         {

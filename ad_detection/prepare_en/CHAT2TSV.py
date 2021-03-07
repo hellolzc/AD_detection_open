@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import os
 
-import pandas as pd #数据分析
-import numpy as np #科学计算
+import pandas as pd
+import numpy as np
 from pandas import Series,DataFrame
 
 import sys
 sys.path.append('../..')
-from ad_detection.code.pylangacq_modified import chat
+from ad_detection.prepare_en.pylangacq_modified import chat
 
 def processOneChat(filename):
     reader=chat.SingleReader(filename)
@@ -49,6 +49,8 @@ def get_standard_sex(sex_str):
         return '?'
 
 def processCHATs(inpath, outpath, metainfo_file):
+    if not os.path.exists(outpath):
+        os.mkdir(outpath)
     filenames = os.listdir(inpath)
     filenames=sorted([x for x in filenames if x.endswith('.cha')])
 
