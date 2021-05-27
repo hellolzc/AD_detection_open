@@ -163,9 +163,9 @@ if __name__ == '__main__':
     proj_root_path = '../../ws_cn/'
 
     csv_label_path = proj_root_path + 'label/summary.csv'
-    blacklist_path = proj_root_path + 'label/blacklist_xfy_update20200109.csv'  # blacklist
+    blacklist_path = proj_root_path + 'label/blacklist.csv'  # blacklist
     duration_fp = proj_root_path + 'fusion/duration.csv'
-    egemaps_fp = proj_root_path + 'fusion/acoustic_egemaps_extract_b_norm.csv'
+    egemaps_fp = proj_root_path + 'fusion/acoustic_CPE16.csv'
     linguistic_fp = proj_root_path + 'fusion/linguistic.csv'
     syntactic_fp = proj_root_path + 'fusion/syntactic_parse.csv'
 

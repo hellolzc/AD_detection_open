@@ -88,8 +88,7 @@ get_ipython().system('ls ../ws_en/fusion/')
 
 
 from ad_detection.dlcode.dl_data_manager import DLDataSet
-DL_FILE_PATH = '/home/zhaoci/copy_186/bottleneck_hp.hdf5'
-# '/home/zhaoci/copy_186/bottleneck_hp.hdf5'  # proj_root_path + 'fusion/bottleneck_hp.hdf5'
+DL_FILE_PATH = proj_root_path + 'fusion/bottleneck_hp.hdf5'
 
 dl_dataset = DLDataSet(DL_FILE_PATH, FE_file_path, len(CLASS_NAMES), normlize=True,  mask_aug_num=(2,2))
 

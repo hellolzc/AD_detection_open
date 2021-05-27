@@ -48,8 +48,8 @@ from ad_detection.mlcode.util.helper_functions import *
 
 from ad_detection.mlcode.merge_feature import merge_all
 
-proj_root_path = '../'
-FE_file_path = proj_root_path + 'fusion/data_after_FE_CPE16.csv'
+proj_root_path = '../ws_en/'
+FE_file_path = proj_root_path + 'fusion/merged_CPE16.csv'
 
 
 CLASS_COL_NAME = 'label'
@@ -63,7 +63,8 @@ SEEDS = tuple(range(2008,2018))
 from ad_detection.mlcode.data_splitter import KFoldSplitter
 
 # 载入已划分的数据
-data_splitter = KFoldSplitter(split_file_dir='../list/split/', result_file_dir='../list/result/')
+data_splitter = KFoldSplitter(split_file_dir='../ws_en/list/split/',
+                           result_file_dir='../ws_en/list/result/')
 
 
 # In[ ]:
@@ -77,17 +78,15 @@ data_splitter = KFoldSplitter(split_file_dir='../list/split/', result_file_dir='
 # In[ ]:
 
 
-get_ipython().system('ls ../data/')
-get_ipython().system('echo ----------')
-get_ipython().system('ls ../fusion/')
+get_ipython().system('ls ../ws_en/fusion/')
 
 
 # In[ ]:
 
 
 from ad_detection.dlcode.dl_data_manager import DLDataSet
-DL_FILE_PATH = '../data/acoustic_CPE16_selected3.hdf5'
-# DL_FILE_PATH = '../data/acoustic_emnet.hdf5'
+DL_FILE_PATH = proj_root_path + '/fusion/acoustic_CPE16_selected3.hdf5'
+
 dl_dataset = DLDataSet(DL_FILE_PATH, FE_file_path, len(CLASS_NAMES))
 
 
@@ -201,7 +200,7 @@ get_ipython().system('nvidia-smi')
 # In[ ]:
 
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 import tensorflow as tf
 
 

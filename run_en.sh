@@ -20,8 +20,8 @@ matlab -nodisplay -r  "cd ../ws_en/data; peak_normalization"
 # 1.2 Convert chat files to TSV files.
 cd ${project_dir}/ad_detection/prepare_en/
 ./CHAT2CSV.py
-# The group of '358-0c' is 'Probable'. Maybe it is a typo.
-
+# The group of '358-0c' is 'Probable'. I think it is a typo.
+# Check 'chat_tier_info.csv' and rename it to 'summary.csv'.
 
 # 2. Generate list for all data avaliable.
 echo 'Generate namelist_auto.txt...'

@@ -21,7 +21,6 @@ from tensorflow.keras.regularizers import l1, l2
 from tensorflow.keras import backend as K
 
 from ad_detection.dlcode.util.position import AddPositionalEncoding
-from ad_detection.dlcode.util.transformer import TransformerBlock
 
 def sequence_attention_pooling(input_activations, attention_vec_name='attention_vec'):
     """ 输入激活维度为 （Batchsize, Timestep, Dimension）

@@ -87,6 +87,7 @@ def append_2_info(info1_fp, info2_fp, out_fp):
     df1 = pd.read_csv(info1_fp, encoding='utf-8')
     df2 = pd.read_csv(info2_fp, encoding='utf-8')
     df_all = pd.concat([df1, df2])
+    df_all['participant_id'] = df_all['uuid'].apply(lambda x: x.split('-')[0])
     df_all.to_csv(out_fp, encoding='utf-8', index=False)
 
 
